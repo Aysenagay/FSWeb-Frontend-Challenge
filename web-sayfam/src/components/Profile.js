@@ -37,7 +37,7 @@ export default function Profile() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
                 aut, odit laborum aliquam voluptatum nisi mollitia. Mnima
                 accusamus ratione soluta aperiam sit voluptate? Dicta quod
-                deserunt quam temporibus cumque magnam!{" "}
+                deserunt quam temporibus cumque magnam!
               </p>
             </div>
           </div>

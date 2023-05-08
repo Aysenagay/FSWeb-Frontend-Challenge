@@ -1,9 +1,22 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import App from "../App";
 
 export default function ModeSwitch() {
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const body = document.body;
+    body.classList.toggle("dark-mode", darkMode);
+    const footer = document.querySelector(".footerSection");
+    footer.classList.toggle("dark-mode", darkMode);
+    const bio = document.querySelector(".heading");
+    bio.classList.toggle("dark-mode", darkMode);
+    const skills = document.querySelector(".heading-list");
+    skills.classList.toggle("dark-mode", darkMode);
+    const profil = document.querySelector(".profile-heading");
+    profil.classList.toggle("dark-mode", darkMode);
+  }, [darkMode]);
 
   const handleToggle = () => {
     setDarkMode(!darkMode);

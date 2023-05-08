@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export default function Bio() {
   return (
-    <div className="heroContainer">
+    <div className="heroSection">
       <div className="hero">
         <div className="hero-left">
           <div className="name">
-            <div className="lineWithName">
+            <div className="line">
               <h5 className="name-line">___________</h5>
               <h5>Ayşen Agay</h5>
             </div>
@@ -22,7 +23,9 @@ export default function Bio() {
           </p>
           <div className="buttons">
             <div className="hire-button">
-              <p className="whiteText">Hire me</p>
+              <Link to="footer">
+                <p className="hiremeText">Contact me</p>
+              </Link>
             </div>
 
             <div className="github-button">

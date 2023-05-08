@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="footerContainer">
+    <div className="footerSection">
       <div className="footer">
-        <div className="footerCol">
-          <h2 className="lets">
+        <div className="footerContainer">
+          <h2 className="footerText">
             Let’s work together on <br /> your next product.
           </h2>
           <div className="footerInfo">
