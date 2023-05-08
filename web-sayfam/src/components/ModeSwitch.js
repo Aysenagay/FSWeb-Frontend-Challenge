@@ -2,8 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 import App from "../App";
 
-export default function ModeSwitch() {
-  const [darkMode, setDarkMode] = useState(false);
+export default function ModeSwitch({ handleLanguageChange }) {
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
 
   useEffect(() => {
     const body = document.body;
@@ -16,9 +18,11 @@ export default function ModeSwitch() {
     skills.classList.toggle("dark-mode", darkMode);
     const profil = document.querySelector(".profile-heading");
     profil.classList.toggle("dark-mode", darkMode);
+
+    localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
-  const handleToggle = () => {
+  const handleToggle = ({ language }) => {
     setDarkMode(!darkMode);
   };
 
@@ -37,7 +41,15 @@ export default function ModeSwitch() {
         <div className="modeText">{darkMode ? "LIGHT MODE" : "DARK MODE"}</div>
         <div className="modeText">|</div>
         <div className="modeText">
-          <span id="lang">TÜRKÇE</span>'YE GEÇ
+          <span id="lang" onClick={handleLanguageChange}>
+            TÜRKÇE
+          </span>
+          'YE GEÇ
+        </div>
+        <div className="modeText">
+          <span id="lang" onClick={handleLanguageChange}>
+            ENGLISH
+          </span>
         </div>
       </div>
     </div>

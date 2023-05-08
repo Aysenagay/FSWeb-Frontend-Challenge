@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-export default function Bio() {
+export default function Bio({ language }) {
   return (
     <div className="heroSection">
       <div className="hero">
@@ -12,19 +12,40 @@ export default function Bio() {
               <h5>Ayşen Agay</h5>
             </div>
           </div>
-          <h1 className="heading">
-            Creative thinker <br />
-            Minimalism lover
-          </h1>
-          <p className="intro">
-            Hi, I’m Ayşen. I’m a full-stack developer. If you are looking for a
-            Developer who to craft solid and scalable frontend products with
-            great user experiences. Let’s shake hands with me.
-          </p>
+          {language === "en" ? (
+            <h1 className="heading">
+              Creative thinker <br />
+              Minimalism lover
+            </h1>
+          ) : (
+            <h1 className="heading">
+              Yaratıcı düşünür
+              <br />
+              Minimalizm Aşığı
+            </h1>
+          )}
+
+          {language === "en" ? (
+            <p className="intro">
+              Hi, I’m Ayşen. I’m a full-stack developer. If you are looking for
+              a Developer who to craft solid and scalable frontend products with
+              great user experiences. Let’s shake hands with me.
+            </p>
+          ) : (
+            <p className="intro">
+              Merhaba, ben Ayşen. Ben bir full-stack geliştiricisiyim. Eğer bir
+              Sağlam ve ölçeklenebilir ön uç ürünleri oluşturacak geliştirici
+              harika kullanıcı deneyimleri. Benimle el sıkışalım.
+            </p>
+          )}
           <div className="buttons">
             <div className="hire-button">
               <Link to="footer">
-                <p className="hiremeText">Contact me</p>
+                {language === "en" ? (
+                  <p className="hiremeText">Contact me</p>
+                ) : (
+                  <p className="hiremeText">Bana ulaşın</p>
+                )}
               </Link>
             </div>
 

@@ -20,7 +20,6 @@ export default function Profile() {
                     <p>Tercih Ettiği Rol</p>
                   </div>
                   <div className="values">
-                    {" "}
                     <p>28.03.1998</p>
                     <p>İstanbul</p>
                     <p>
