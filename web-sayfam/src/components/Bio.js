@@ -33,9 +33,9 @@ export default function Bio({ language }) {
             </p>
           ) : (
             <p className="intro">
-              Merhaba, ben Ayşen. Ben bir full-stack geliştiricisiyim. Eğer bir
-              Sağlam ve ölçeklenebilir ön uç ürünleri oluşturacak geliştirici
-              harika kullanıcı deneyimleri. Benimle el sıkışalım.
+              Merhaba, ben Ayşen. Ben bir full-stack geliştiricisiyim. Eğer
+              sağlam ve ölçeklenebilir bir web sayfası tasarlamak isterseniz
+              benimle iletişime geçebilirsiniz.
             </p>
           )}
           <div className="buttons">

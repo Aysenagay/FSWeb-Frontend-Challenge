@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Profile() {
+export default function Profile({ language }) {
   return (
     <div className="profileContainer">
       <div className="profile">
@@ -31,13 +31,27 @@ export default function Profile() {
               </div>
             </div>
             <div className="about-box">
-              <h3 className="content-heading">About Me</h3>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-                aut, odit laborum aliquam voluptatum nisi mollitia. Mnima
-                accusamus ratione soluta aperiam sit voluptate? Dicta quod
-                deserunt quam temporibus cumque magnam!
-              </p>
+              {language === "en" ? (
+                <div>
+                  <h3 className="content-heading">About Me</h3>
+                  <p>
+                    I'm Ayşen.I graduated from Sakarya University in 2021.I love
+                    to write code.In 2022, I received Full Stack Web Developer
+                    training from Workintech institution.I continue my career
+                    with software.
+                  </p>
+                </div>
+              ) : (
+                <div>
+                  <h3 className="content-heading">Hakkımda</h3>
+                  <p>
+                    Ben Ayşen. 2021 Sakarya Üniversitesinden mezun oldum. Kod
+                    yazmayı seviyorum. 2022 yılında Workintech kurumundan Full
+                    Stack Web Developer eğitimi aldım. Kariyerime yazılım ile
+                    devam etmekteyim.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>

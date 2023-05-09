@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import App from "../App";
 
-export default function ModeSwitch({ handleLanguageChange }) {
+export default function ModeSwitch({ handleLanguageChange, language }) {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkMode") === "true"
   );
@@ -40,17 +40,24 @@ export default function ModeSwitch({ handleLanguageChange }) {
         </label>
         <div className="modeText">{darkMode ? "LIGHT MODE" : "DARK MODE"}</div>
         <div className="modeText">|</div>
-        <div className="modeText">
-          <span id="lang" onClick={handleLanguageChange}>
-            TÜRKÇE
-          </span>
-          'YE GEÇ
-        </div>
-        <div className="modeText">
-          <span id="lang" onClick={handleLanguageChange}>
-            ENGLISH
-          </span>
-        </div>
+        {language === "en" ? (
+          <div>
+            <div className="modeText">
+              <span id="lang" onClick={handleLanguageChange}>
+                TÜRKÇE
+              </span>
+              'YE GEÇ
+            </div>
+          </div>
+        ) : (
+          <div>
+            <div className="modeText">
+              <span id="lang" onClick={handleLanguageChange}>
+                ENGLISH
+              </span>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

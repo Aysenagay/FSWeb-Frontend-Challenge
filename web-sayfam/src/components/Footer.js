@@ -1,20 +1,30 @@
 import React from "react";
 
-export default function Footer() {
+export default function Footer({ language }) {
   return (
     <div className="footerSection">
       <div className="footer">
         <div className="footerContainer">
-          <h2 className="footerText">
-            Let’s work together on <br /> your next product.
-          </h2>
+          {language === "en" ? (
+            <div>
+              <h2 className="footerText">
+                Let’s work together on <br /> your next product.
+              </h2>
+            </div>
+          ) : (
+            <div>
+              <h2 className="footerText">
+                Bir Sonraki Projeniz için <br /> Birlikte Çalışalım.
+              </h2>
+            </div>
+          )}
           <div className="footerInfo">
             <a href="mailto:aysenagay82@gmail.com" className="mail">
               👉 aysenagay82@gmail.com
             </a>
 
             <div className="links-footer">
-              <p>Personal Blog</p>
+              {language === "en" ? <p>Personal Blog</p> : <p>Kişisel Blog</p>}
               <a
                 href="https://github.com/Aysenagay"
                 className="githubFooter"
