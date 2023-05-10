@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import App from "../App";
 
 export default function ModeSwitch({ handleLanguageChange, language }) {
   const [darkMode, setDarkMode] = useState(
@@ -18,11 +17,10 @@ export default function ModeSwitch({ handleLanguageChange, language }) {
     skills.classList.toggle("dark-mode", darkMode);
     const profil = document.querySelector(".profile-heading");
     profil.classList.toggle("dark-mode", darkMode);
-
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
-  const handleToggle = ({ language }) => {
+  const handleToggle = () => {
     setDarkMode(!darkMode);
   };
 

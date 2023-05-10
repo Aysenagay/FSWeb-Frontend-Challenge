@@ -24,7 +24,6 @@ export default function Bio({ language }) {
               Minimalizm Aşığı
             </h1>
           )}
-
           {language === "en" ? (
             <p className="intro">
               Hi, I’m Ayşen. I’m a full-stack developer. If you are looking for
