@@ -66,9 +66,7 @@ export default function Project() {
                   className="projectsPhotos"
                 />
                 <h3 className="content-heading">{project.projectName}</h3>
-                <p className="description-project">
-                  {project.projectDescription}
-                </p>
+
                 <div className="programs">
                   <p>react</p>
                   <p>redux</p>

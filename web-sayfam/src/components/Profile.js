@@ -13,18 +13,35 @@ export default function Profile({ language }) {
                 <h3 className="content-heading">Profile</h3>
                 <div className="two-part">
                   <div className="keys">
-                    <p>Doğum tarihi</p>
-                    <p>İkamet Şehri</p>
-                    <p>Eğitim Durumu</p>
-                    <br /> <br />
-                    <p>Tercih Ettiği Rol</p>
+                    {language === "en" ? (
+                      <p>Birth Date</p>
+                    ) : (
+                      <p>Doğum Tarihi</p>
+                    )}
+                    {language === "en" ? <p>City</p> : <p>Şehir</p>}
+                    {language === "en" ? (
+                      <p>Education Status</p>
+                    ) : (
+                      <p>Eğitim Durumu</p>
+                    )}
+                    <br />
+                    <br />
+                    {language === "en" ? <p>Position</p> : <p>Pozisyon</p>}
                   </div>
                   <div className="values">
                     <p>28.03.1998</p>
                     <p>İstanbul</p>
-                    <p>
-                      Sakarya Üniversitesi-Elektrik Elektronik Mühendisliği-2021
-                    </p>
+                    {language === "en" ? (
+                      <p>
+                        Sakarya University,Electrical-Electronics
+                        Engineering,2021
+                      </p>
+                    ) : (
+                      <p>
+                        Sakarya Üniversitesi,Elektrik Elektronik
+                        Mühendisliği,2021
+                      </p>
+                    )}
                     <p>Frontend Developer,UI</p>
                   </div>
                 </div>
@@ -36,7 +53,7 @@ export default function Profile({ language }) {
                   <h3 className="content-heading">About Me</h3>
                   <p>
                     I'm Ayşen.I graduated from Sakarya University in 2021.I love
-                    to write code.In 2022, I received Full Stack Web Developer
+                    to write code.In 2023, I received Full Stack Web Developer
                     training from Workintech institution.I continue my career
                     with software.
                   </p>
@@ -46,7 +63,7 @@ export default function Profile({ language }) {
                   <h3 className="content-heading">Hakkımda</h3>
                   <p>
                     Ben Ayşen. 2021 Sakarya Üniversitesinden mezun oldum. Kod
-                    yazmayı seviyorum. 2022 yılında Workintech kurumundan Full
+                    yazmayı seviyorum. 2023 yılında Workintech kurumundan Full
                     Stack Web Developer eğitimi aldım. Kariyerime yazılım ile
                     devam etmekteyim.
                   </p>

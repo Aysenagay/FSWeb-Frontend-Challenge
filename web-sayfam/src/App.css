@@ -607,16 +607,23 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 8rem;
+  flex-wrap: wrap;
 }
 .skills {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.skillsContent {
+  display: flex;
+  flex-direction: column;
   width: 80%;
 }
 .skill-heading {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .skill-list {
   display: flex;
@@ -634,6 +641,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.list {
+  display: flex;
+  width: 30%;
+}
 .skill-list h3 {
   font-style: normal;
   font-weight: 500;
@@ -648,7 +659,7 @@ body {
   font-size: 0.75rem;
   line-height: 1rem;
   color: #6b7280;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 /* Skills Part */
