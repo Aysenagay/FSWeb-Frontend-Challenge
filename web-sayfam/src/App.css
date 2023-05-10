@@ -766,3 +766,41 @@ h1.profile-baslik {
   color: #000000;
   margin-top: 4rem;
 }
+/* Responsive*/
+
+@media only screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .heroSection,
+  .skillsContent,
+  .skills,
+  .profile,
+  .profile-infoCol,
+  .profile-infoText,
+  .projects,
+  .proje,
+  .links-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bio-image {
+    width: 16rem;
+    height: auto;
+    margin-top: 2rem;
+  }
+  .nav {
+    gap: 1.5rem;
+  }
+
+  .list {
+    width: 100%;
+  }
+  .footerSection {
+    width: 100%;
+  }
+}
