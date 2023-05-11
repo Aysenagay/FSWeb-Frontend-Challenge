@@ -9,7 +9,9 @@ import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") === "true"
+  );
 
   const handleLanguageChange = () => {
     if (language === "en") {
@@ -17,6 +19,7 @@ function App() {
     } else {
       setLanguage("en");
     }
+    localStorage.setItem("language ", language);
   };
 
   return (

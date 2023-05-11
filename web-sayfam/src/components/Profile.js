@@ -11,7 +11,7 @@ export default function Profile({ language }) {
             <div className="profile-box">
               <div className="right">
                 <h3 className="content-heading">Profile</h3>
-                <div className="two-part">
+                <div className="second">
                   <div className="keys">
                     {language === "en" ? (
                       <p>Birth Date</p>
