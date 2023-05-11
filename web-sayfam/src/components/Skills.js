@@ -37,17 +37,17 @@ const skillsDataTr = [
   {
     name: "JavaScript",
     description:
-      "JavaScript, web sayfalarında dinamik davranışlar oluşturmak için kullanılan bir programlama dilidir. Hem istemci tarafında (yani tarayıcıda) hem de sunucu tarafında (Node.js) ortamlarda kullanılabilir. ",
+      " JavaScript, geliştiricilerin etkileşimli web sayfaları oluşturmak için kullandığı bir programlama dilidir. JavaScript işlevleri, sosyal medya akışlarını yenilemekten animasyonlar ve etkileşimli haritalar göstermeye kadar, bir web sitesi kullanıcısının deneyimini iyileştirebilir. İstemci tarafındaki bir betik dili olarak, World Wide Web'in temel teknolojilerinden biridir.",
   },
   {
     name: "React.Js",
     description:
-      "React.js, kullanıcı arabirimleri (UI'ler) oluşturmak için kullanılan popüler bir açık kaynaklı JavaScript kitaplığıdır. Geliştiricilerin yeniden kullanılabilir UI bileşenleri oluşturmasına olanak tanır.",
+      " ReactJS, geliştiriciler tarafından web uygulamaları için kullanıcı arayüzleri oluşturmak amacıyla kullanılan güçlü bir JavaScript kütüphanesidir.",
   },
   {
     name: "Node.Js",
     description:
-      "Node.js, geliştiricilerin JavaScript kodunu bir web tarayıcısının dışında yürütmesine olanak tanıyan popüler bir açık kaynaklı JavaScript çalıştırma ortamıdır. Ölçeklenebilir ve yüksek performanslı bina için tasarlanmıştır.",
+      "Node.js, web ve mobil uygulamaları destekleyen arka uç hizmetleri oluşturmak için çok uygundur. Sağlam ve ölçeklenebilir web sunucuları ve API'ler oluşturmayı kolaylaştıran Express.js gibi zengin bir paket ve çerçeve ekosistemi sağlar.",
   },
   {
     name: "CSS",
@@ -62,7 +62,7 @@ const skillsDataTr = [
   {
     name: "Cypress",
     description:
-      "Kullanıcılarınızın hangi tanımlama bilgilerini kabul edeceklerini veya reddedeceklerini seçmelerine olanak tanıyan basit, özelleştirilebilir, minimum kurulumlu bir tanımlama bilgisi eklentisi. Bu, vanilya JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur ve git deposu, kod ve temalar için her türlü özelleştirmeyi mümkün kılar.",
+      "Cypress, modern web uygulamaları için tasarlanmış açık kaynak bir front-end test aracıdır. Ayrıca testlerin javascript ile yazıldığı, açık kaynak bir test otomasyon aracıdır.",
   },
 ];
 
