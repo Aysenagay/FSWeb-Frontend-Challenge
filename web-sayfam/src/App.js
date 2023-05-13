@@ -6,20 +6,22 @@ import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
-  const [language, setLanguage] = useState(
-    localStorage.getItem("language") === "true"
-  );
+  const [language, setLanguage] = useState("en");
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      setLanguage(savedLanguage);
+    }
+  }, []);
 
   const handleLanguageChange = () => {
-    if (language === "en") {
-      setLanguage("tr");
-    } else {
-      setLanguage("en");
-    }
-    localStorage.setItem("language ", language);
+    const newLanguage = language === "en" ? "tr" : "en";
+    setLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage);
   };
 
   return (
