@@ -65,11 +65,7 @@ export default function Bio({ language }) {
             </div>
           </div>
         </div>
-        <img
-          className="bio-image"
-          src="https://media.licdn.com/dms/image/D4D03AQEx47_t3cuX5A/profile-displayphoto-shrink_200_200/0/1680813146793?e=1689206400&v=beta&t=Ei3vmBprDw4_mz6Xn1QVvTHcxyPgxyHMxKYRUuChbJU"
-          alt="profile"
-        />
+        <img className="bio-image" src="linkedin_foto.jpg" alt="profile" />
       </div>
     </div>
   );
