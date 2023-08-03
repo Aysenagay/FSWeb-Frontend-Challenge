@@ -71,7 +71,6 @@ export default function Project() {
                   <p>react</p>
                   <p>redux</p>
                   <p>axios</p>
-                  <p>javascript</p>
                 </div>
                 <div className="links">
                   <a
